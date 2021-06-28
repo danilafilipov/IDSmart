@@ -46,7 +46,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a class="page-scroll" href="onas.html">О нас</a></li>
+                <li class=""><a class="page-scroll" href="onas.html">О нас</a></li>
                 <li class=""><a class="page-scroll" page-scroll="" href="news.html">Новости</a></li>
                 <li><a class="page-scroll" page-scroll="" href="parents.html">Родителям</a></li>
                 <li><a class="page-scroll" page-scroll="" href="schools.html">Школам</a></li>
@@ -62,6 +62,38 @@
     </div>
 </nav>
 
+<section>
+    <div class="container">
+        <div class="row text-center">
+            <div class="photo">
+                <img src="images/photo_galery/1.jpg" alt="">
+                <img src="images/photo_galery/2.jpg" alt="">
+                <img src="images/photo_galery/3.jpg" alt="">
+                <img src="images/photo_galery/4.jpg" alt="">
+                <img src="images/photo_galery/5.jpg" alt="">
+                <img src="images/photo_galery/6.jpg" alt="">
+                <img src="images/photo_galery/7.jpg" alt="">
+                <img src="images/photo_galery/8.jpg" alt="">
+                <img src="images/photo_galery/9.jpg" alt="">
+                <img src="images/photo_galery/10.jpg" alt="">
+            </div>
+            <div class="pagination">
+                <a href="#">«</a>
+                <a href="#">1</a>
+                <a href="#" class="active">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">»</a>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</section>
+
 <!-- Vendor scripts -->
 <script src="./index_files/jquery.min.js.Без названия"></script>
 <script src="./index_files/jquery-ui.min.js.Без названия"></script>
@@ -73,28 +105,5 @@
 
 <!-- App scripts -->
 <script src="./index_files/homer.js.Без названия"></script>
-
-<!-- Local script for menu handle -->
-<!-- It can be also directive -->
-<script>
-    $(document).ready(function () {
-
-        // Page scrolling feature
-        $('a.page-scroll').bind('click', function(event) {
-            var link = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $(link.attr('href')).offset().top - 50
-            }, 500);
-            event.preventDefault();
-        });
-
-        $('body').scrollspy({
-            target: '.navbar-fixed-top',
-            offset: 80
-        });
-
-    });
-</script>
-
 
 </body></html>

@@ -4174,11 +4174,17 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     border-radius: 4px;
   }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 1200px) {
+  .collapse {
+    display: block!important;
+  }
+
   .navbar-header {
     float: left;
   }
 }
+
 .navbar-collapse {
   padding-right: 15px;
   padding-left: 15px;
@@ -4198,12 +4204,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .navbar-collapse.collapse {
+  /* .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
     overflow: visible !important;
-  }
+  } */
   .navbar-collapse.in {
     overflow-y: visible;
   }
@@ -4285,7 +4291,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -4315,7 +4321,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar-toggle {
     display: none;
   }
