@@ -5076,6 +5076,7 @@ display: flex;
 
 .landing-page .parents-info .parents-item_color a {
 	background-color: #d71a1a;
+	border: none;
 }
 
 .landing-page .parents-info .parents-item_color a:hover {
@@ -5136,10 +5137,6 @@ display: flex;
 	width: 80%; 
   }
 
-.b-popup-content2 #access_cards {
-	padding: 0px;
-}
-
 @media  screen and (max-width:500px) {
 	.contact_block {
 		flex-direction: column;
@@ -5199,31 +5196,6 @@ display: flex;
 		flex-direction: column;
 	}
 	
-}
-
-.b-container{
-    margin:0px auto;
-    padding:10px;
-    font-size:30px;
-    color: #fff;
-}
-.b-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-}
-.b-popup .b-popup-content{
-	position: relative;
-	margin: 100px auto 0px auto;
-    width: 50%;
-    height: 100px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px #000;
 }
 
 
