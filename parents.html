@@ -73,8 +73,8 @@
                         <li class="parents-item"><a href="">Схема оплаты</a></li>
                         <li class="parents-item"><a href="">Калькулятор ЕРИП</a></li>
                         <li class="parents-item"><a href="">Посещаемость</a></li>
-                        <li class="parents-item parents-item_color"><a href="javascript:PopUpShow()">Успеваемость</a></li>
-                        <li class="parents-item parents-item_color"><a href="javascript:PopUpShow()">Домашние задания</a></li>
+                        <li class="parents-item parents-item_color"><a class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Успеваемость</a></li>
+                        <li class="parents-item parents-item_color"><a class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Домашние задания</a></li>
                     </ul>
                 </div>
                
@@ -163,28 +163,15 @@
     </div>
 </section>
 
-<div class="b-popup" id="popup1">
-    <div class="b-popup-content">
-        <p>Извините, раздел в разработке!</p>  
-    <a href="javascript:PopUpHide()" class="close"></a>
-    </div>
-</div>
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
 
-<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
-    }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
-    }
-</script>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <p>Извините, раздел в разработке!</p>
+    </div>
+  </div>
+</div>
 
 <!-- Vendor scripts -->
 <script src="./index_files/jquery.min.js.Без названия"></script>
