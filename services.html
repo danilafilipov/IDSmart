@@ -70,7 +70,7 @@
                 <div class="parents-info">
                     <h4 class="parents_title text-left">Информация</h4>
                     <ul class="parents-list nav navbar-nav ">
-                        <li class="parents-item"><a href="javascript:PopUpShow()">Карты доступа</a></li>
+                        <li class="parents-item"><a id="myBtn">Карты доступа</a></li>
                         <li class="parents-item"><a href="">Успеваемость</a></li>
                         <li class="parents-item"><a href="">Домашние задания</a></li>
                     </ul>
@@ -150,9 +150,12 @@
     </div>
 </section>
 
-<div class="b-popup2" id="popup2">
-    <div class="b-popup-content2">
-        <section id="access_cards" class="bg-light pricing">
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close"></span>
+        <section id="access_cards" class="pricing">
             <div>
         
                 <div class="service_block">
@@ -315,7 +318,7 @@
                                 Услуги дизайнера
                             </li>
                             <li class="pricing-desc">
-                                Индивидуальные услуги по дизайну изображений на картах доступа.
+                                Индивидуальные услуги по дизайну изображений на картах доступа. 
                             </li>
                             <li class="pricing-price">
                                 <span></span>
@@ -329,25 +332,38 @@
         
             </div>
         </section>
-    <a href="javascript:PopUpHide()" class="close"></a>
     </div>
-</div>
+  
+  </div>
 
-<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
-    });
-    //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup2").show();
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks on the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
     }
-    //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup2").hide();
-    }
-</script>
+  }
+  </script>
+
 
 <!-- Vendor scripts -->
 <script src="./index_files/jquery.min.js.Без названия"></script>
