@@ -69,12 +69,12 @@
                 <h2 style="margin-top: 20px;""><span class="text-success">Родителям</span></h2>
                 <div class="parents-info">
                     <h4 class="parents_title text-left">Информация</h4>
-                    <ul class="parents-list nav navbar-nav ">
+                    <ul class="parents-list nav navbar-nav b-container">
                         <li class="parents-item"><a href="">Схема оплаты</a></li>
                         <li class="parents-item"><a href="">Калькулятор ЕРИП</a></li>
                         <li class="parents-item"><a href="">Посещаемость</a></li>
-                        <li class="parents-item"><a href="">Успеваемость</a></li>
-                        <li class="parents-item"><a href="">Домашние задания</a></li>
+                        <li class="parents-item parents-item_color"><a href="javascript:PopUpShow()">Успеваемость</a></li>
+                        <li class="parents-item parents-item_color"><a href="javascript:PopUpShow()">Домашние задания</a></li>
                     </ul>
                 </div>
                
@@ -88,6 +88,19 @@
                 <p>Возможность установки электронных проходных и турникетов в учебных заведениях подтверждена документами Противопожарной службы МЧС Республики Беларусь и МАиС Республики Беларусь. SMS-уведомление родителей. Система «Безопасная школа» позволяет оперативно извещать родителей о времени прихода ребенка в школу и ухода из нее, а также о не приходе к первому по расписанию уроку. Система запоминает время прохода каждого ученика через турникет и автоматически отправляет родителям SMS-уведомления. Больше нет необходимости ждать сообщения от ребенка о том, что он без проблем дошел до школы.</p>
                 <p><strong>ПО ТЕХНИЧЕСКИМ ПРИЧИНАМ КАЛЬКУЛЯТОР ЕРИП ВРЕМЕННО НЕ РАБОТАЕТ, приносим свои извинения.</strong></p>
             </div>
+        </div>
+
+        <div class="code_service">
+            <p><strong>Кодировка услуг:</strong></p>
+            <p><strong>050</strong> - новая карточка в ходе учебного года</p>
+            <p><strong>055</strong> - новая карточка в начале учебного года</p>
+            <p><strong>057</strong> - новая карточка социальной группы в ходе учебного года</p>
+            <p><strong>058</strong> - восстановление гарантийной карточки</p>
+            <p><strong>070</strong> - новая наклейка</p>
+            <p><strong>090</strong> - новая карточка персонала</p>
+            <p><strong>121</strong> - СМС-информирование на месяц для новых пользователей (5-11 классы)</p>
+            <p><strong>122</strong> - СМС-информирование на месяц для новых пользователей (1-4 классы)</p>
+            <p><strong>123</strong> - СМС-информирование на месяц для постоянных клиентов (все классы)</p>
         </div>
     </div>
 </section>
@@ -149,6 +162,29 @@
 
     </div>
 </section>
+
+<div class="b-popup" id="popup1">
+    <div class="b-popup-content">
+        <p>Извините, раздел в разработке!</p>  
+    <a href="javascript:PopUpHide()" class="close"></a>
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+<script>
+    $(document).ready(function(){
+        //Скрыть PopUp при загрузке страницы    
+        PopUpHide();
+    });
+    //Функция отображения PopUp
+    function PopUpShow(){
+        $("#popup1").show();
+    }
+    //Функция скрытия PopUp
+    function PopUpHide(){
+        $("#popup1").hide();
+    }
+</script>
 
 <!-- Vendor scripts -->
 <script src="./index_files/jquery.min.js.Без названия"></script>
